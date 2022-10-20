@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title> Index </title>
+</head>
+<body>
+    <h4>Hola usuario</h4>
+    <h4>{{var_name}}</h4>
+    <h4>{{var_age}}</h4>
+    <h4>{{var_list}}</h4>
+
+    {% if var_age > 18 %}
+        <p> mayor de edad </p>
+    {% else %}
+        <p> menor de edad </p>
+    {% endif %}
+
+    {% for item in var_list %}
+    <p> {{item}} </p>
+    {% endfor %}
+
+</body>       
+</html>

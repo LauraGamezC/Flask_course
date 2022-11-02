@@ -1,6 +1,6 @@
 # Database Operations
 
-In chapter5.py were configured a database and defined two classes (Role and User) with their table respectively.  
+In chapter5.py were configured a database and defined two classes (Role and User) with their tables respectively.  
 You can add data to this tables with following the next instructions
 
 ## Creating tables

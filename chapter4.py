@@ -24,5 +24,5 @@ def index():
     return render_template('user_temp_1.html', form=form, name=session.get('name'))
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8080)
+    app.run(debug=True, port=8000)
  

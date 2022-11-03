@@ -8,8 +8,13 @@ In this repository the flask training is stored
     ```
     $pip install -r requirements.txt
     ```
-- Open your terminal and go to the directory where the repository is stored and run the code  
+- Open your terminal and go to the directory where the repository is stored and define the next env variable  
     ```
-    $python file_name.py
+    export FLASK_APP=demo.py
     ```
-- Open your browser in port 8000 to watch the results
+- Then run the demo by the following comand
+
+    ```
+    flask run
+    ```
+- Open your browser in port 5000 to watch the results

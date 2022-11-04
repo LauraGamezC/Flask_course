@@ -40,5 +40,6 @@ class ProductionConfig(Config):
         'development': DevelopmentConfig,
         'testing': TestingConfig,
         'production': ProductionConfig,
+        
         'default': DevelopmentConfig
     }

@@ -13,11 +13,14 @@ def index():
         if user is None:
             user = User(username=form.name.data)
             db.session.add(user)
-            db.session.commit()
             session['known'] = False
+            if app.config['FLASKY_ADMIN']:
+                send_email(app.config['FLASKY_ADMIN'], 'New User',
+                    'mail/new_user', user=user)
         else:
             session['known'] = True
-        session['name'] = form.name.dat
+            session['name'] = form.name.data
+            form.name.data
         return redirect(url_for('.index')) 
     return render_template('index.html',
                            form=form, name=session.get('name'),

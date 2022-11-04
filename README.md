@@ -10,7 +10,8 @@ In this repository the flask training is stored
     ```
 - Open your terminal and go to the directory where the repository is stored and define the next env variable  
     ```
-    export FLASK_APP=demo.py
+    export FLASK_APP=flaskt.py
+    export FLASK_DEBUG=1
     ```
 - Then run the demo by the following comand
 
